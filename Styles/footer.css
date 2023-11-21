@@ -27,6 +27,7 @@
 }
 .footer-data-container .footer-data {
   position: relative;
+  margin: 0;
 }
 .footer-data-container .main-logo {
   position: relative;
