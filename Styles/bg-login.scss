@@ -1,0 +1,89 @@
+.background-login{
+    position: relative;
+    width: 100vw;
+    height: 800px;
+    background-color: rebeccapurple;
+      img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+      }
+      .date-login-container{
+        width: 1440px;
+        height: auto;
+        .background-login-container{
+          border: 1px solod red;
+          color: rgba(255, 254, 248, 1);
+          width: 1230px;
+          height: 204px;
+          top: 476px;
+          left: 70px;
+          gap: 38px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+  
+          .date-text-container{
+            display: flex;
+            flex-direction: column;
+            width: 1230px;
+            height: 118px;
+            gap: 8px;
+            margin: 0;
+            .date-upper-text{
+              display: flex;
+              flex-direction:column;
+              width: 1230px;
+              height: 78px;
+              p{
+                width: 100%;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 39px;
+                letter-spacing: -0.5px;
+                text-transform: uppercase;
+              }
+            }
+            .lower-text{
+              width: 1230px;
+              height: 32px;
+              p{
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 32px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+  
+          .logins{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 721px;
+            height: 48px;
+            gap: 4px;
+  
+            input{
+              inline-size: 300px;
+              height: 48px;
+              border: 1px rgba(255, 253, 242, 1) solid;
+              padding: 0px 12px 0px 12px;
+              gap: 10px;
+            }
+            button{
+              width: 113px;
+              height: 48px;
+              border-radius:0px 12px 12px 0px;
+              padding: 12px 28px 12px 28px;
+              gap: 10px;
+              border: none;
+            }
+          }
+        }
+      }
+
+    }
+
