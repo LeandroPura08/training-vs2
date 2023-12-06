@@ -199,3 +199,103 @@
     }
   }
 }
+@media (max-width : 1023px) and (min-width : 750px){
+  .top-container{
+    width: 100%;
+    height: 245px;
+    padding: 80px 70px 80px 70px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .title-category-container{
+      width: 1300px;
+      height: 85px;
+      gap: 16px;
+      display: flex;
+      flex-direction: column;
+      p{
+        width: 100%;
+        height: 39px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 39px;
+        letter-spacing: -0.5px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .categories{
+        width: 321px;
+        height: 30px;
+        gap: 16px;
+        display: flex;
+        .summer-container{
+          gap: 6px;
+        }
+        p{
+          position:relative;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+          text-align: center;
+          width: 100%;
+        }
+        p:hover{
+          cursor: pointer;
+        }
+              
+        .selected::before{
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          background-color: rgba(0, 0, 0, 1);
+          border-radius: 5px;
+          bottom: 8px;
+          display: block;
+        }
+        p::before{
+          content: "";
+          position: absolute;
+          height: 2px;
+          width: 0;
+          background-color: rgba(0, 0, 0, 1);
+          border-radius: 5px;
+          bottom: 8px;
+          transition: .4s;
+        }
+  
+        p:hover::before{
+            width: 100%;
+          }
+  
+      }
+    }
+  }
+  .bottom-images-container{
+    width: 100%;
+    padding:0px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    
+    .image{
+      width: 100%;
+      height: 100%;
+      overflow: hidden; 
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 900ms;
+      }
+    }
+    .image:hover{
+      cursor: pointer;
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
